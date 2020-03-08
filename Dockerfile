@@ -11,6 +11,8 @@ RUN chown root /usr/local/bin/certbot-auto && \
 RUN rm -rf /var/lib/apt/lists/* /etc/apt/sources.list.d/*
 
 COPY nginx.conf /etc/nginx
+COPY fsdemo-gateway.fsdemo.com.cert.pem /etc/nginx
+COPY fsdemo-gateway.fsdemo.com.key.pem /etc/nginx
 
 RUN mkdir -p /etc/nginx/logs 
 
