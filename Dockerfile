@@ -5,6 +5,7 @@ RUN apt-get install bash -y
 RUN apt-get install netcat -y
 RUN apt-get install iputils-ping -y
 RUN apt-get install vim -y
+RUN apt-get install curl -y
 
 #ADD https://dl.eff.org/certbot-auto /usr/local/bin/certbot-auto
 #RUN chown root /usr/local/bin/certbot-auto && \
